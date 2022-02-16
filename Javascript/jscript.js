@@ -17,6 +17,7 @@ function scrollFunction() {
     document.getElementById("Header").style.zIndex = "1000px";
     document.getElementById("Header").style.top = "0";
     document.getElementById("Header-Logo").getElementsByTagName("img")[0].style.marginLeft = "20px";
+    document.getElementById("Header-Buttons").style.marginTop = "0px";
     
   } else {
     document.getElementById("Header").style.height = "100vh";
@@ -30,6 +31,7 @@ function scrollFunction() {
     document.getElementById("Header").style.zIndex = "0px";
     document.getElementById("Header").style.top = "0";
     document.getElementById("Header-Logo").getElementsByTagName("img")[0].style.marginLeft = "200px";
+    document.getElementById("Header-Buttons").style.marginTop = "50vh";
   }
 }
 
