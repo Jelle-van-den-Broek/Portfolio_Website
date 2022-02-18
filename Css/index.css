@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,9 +42,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* End CSS Reset */
 
+/* ----------------------------------------------------- Header -----------------------------------------------------*/
 
-
+/* Header Header */
 .Header{
     top: 0;
     height: 100vh;
@@ -58,8 +56,6 @@ table {
 }
 
 /* Header Logo */
-
-
 .Header-Logo img{
     position: absolute;
     width: 300px;
@@ -69,15 +65,16 @@ table {
     margin-left: 200px;
     margin-top: 35vh;
     transition: all 0.2s;
+    transform: rotateZ(45deg);
 }
 
 @keyframes logoAnim{
     from {
-        transform: translateX(-500px);
+        transform: translateX(-500px) translateY(500px) rotateZ(90deg);
     }
 
     to {
-        transform: translateX(0px);
+        transform: translateX(0px) translateY(0px) rotateZ(45deg);
     }
 }
 /* Header Logo End */
@@ -654,32 +651,25 @@ table {
 }
 /* End Header Stars */
 
-.testdiv{
-    height: 115vh;
-    width: 100%;
-    background-color: red;
-}
-
-.testdiv2{
-    height: 100vh;
-    width: 100%;
-    background-color: blue;
-}
-
+/* Header Buttons */
 .Header-Buttons {
     display: inline-block;
     margin-right: 50px;
     text-align: center;
-    margin-top: 50vh;
+    margin-top: 60vh;
     position: absolute;
     margin-left: 60vh;
     transition: all 0.2s;
 }
   
 .Header-Buttons ul li {
-    display: inline-block;
+    float: left;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.Header-Buttons ul{
+
 }
   
 .Header-Buttons a{
@@ -761,5 +751,311 @@ table {
       bottom: 100%;
       transition: 1s;
     }
+
+    .Header-Buttons li:nth-child(1){
+        margin-top: 90px;
+        animation: buttonsAnim 1s ease;
+    }
+
+    .Header-Buttons li:nth-child(2){
+        margin-top: 60px;
+        animation: buttonsAnim 1.2s ease;
+    }
+
+    .Header-Buttons li:nth-child(3){
+        margin-top: 30px;
+        animation: buttonsAnim 1.4s ease;
+    }
+
+    .Header-Buttons li:nth-child(4){
+        margin-top: 0px;
+        animation: buttonsAnim 1.6s ease;
+    }
+
+    @keyframes buttonsAnim{
+        from {
+            transform: translateY(-700px);
+        }
+    
+        to {
+            transform: translateY(0px);
+        }
+    }
+    /* End Header Buttons */
+
+    /* Header Text */
+    .Header-Text span{
+        font-family: 'Bebas Neue', cursive;
+        white-space: pre;
+        font-size: 70px;
+        position: relative;
+        -webkit-text-stroke: 0.1vw #09113a;
+        transition: all 0.2s;
+    }
+
+    .Header-Text{
+        margin-top: 75px;
+        margin-left: 550px;
+        position: absolute;
+        transition: all 0.2s;
+    }
+
+
+    /* Jele van den Broek Text Style */
+    .Header-Text span:nth-child(1){
+        animation: textAnim 1s linear;
+        color: #ba1e68;
+        top: 160px;
+    }
+
+
+    .Header-Text span:nth-child(2){
+        animation: textAnim 1.05s linear;
+        color: #ba1e68;
+        top: 150px;
+    }
+
+    .Header-Text span:nth-child(3){
+        animation: textAnim 1.1s linear;
+        color: #ba1e68;
+        top: 140px;
+    }
+
+    .Header-Text span:nth-child(4){
+        animation: textAnim 1.15s linear;
+        color: #ba1e68;
+        top: 130px;
+    }
+
+    .Header-Text span:nth-child(5){
+        animation: textAnim 1.2s linear;
+        color: #ba1e68;
+        top: 120px;
+    }
+
+    .Header-Text span:nth-child(6){
+    }
+
+    .Header-Text span:nth-child(7){
+        animation: textAnim 1.3s linear;
+        color: #ba1e68;
+        top: 110px;
+    }
+
+    .Header-Text span:nth-child(8){
+        animation: textAnim 1.35s linear;
+        color: #ba1e68;
+        top: 100px;
+    }
+
+    .Header-Text span:nth-child(9){
+        animation: textAnim 1.4s linear;
+        color: #ba1e68;
+        top: 90px;
+    }
+
+    .Header-Text span:nth-child(10){
+    }
+
+    .Header-Text span:nth-child(11){
+        animation: textAnim 1.45s linear;
+        color: #ba1e68;
+        top: 80px;
+    }
+
+    .Header-Text span:nth-child(12){
+        animation: textAnim 1.5s linear;
+        color: #ba1e68;
+        top: 70px;
+    }
+
+    .Header-Text span:nth-child(13){
+        animation: textAnim 1.55s linear;
+        color: #ba1e68;
+        top: 60px;
+    }
+
+    .Header-Text span:nth-child(14){
+    }
+
+    .Header-Text span:nth-child(15){
+        animation: textAnim 1.65s linear;
+        color: #ba1e68;
+        top: 50px;
+    }
+
+    .Header-Text span:nth-child(16){
+        animation: textAnim 1.7s linear;
+        color: #ba1e68;
+        top: 40px;
+    }
+
+    .Header-Text span:nth-child(17){
+        animation: textAnim 1.75s linear;
+        color: #ba1e68;
+        top: 30px;
+    }
+
+    .Header-Text span:nth-child(18){
+        animation: textAnim 1.8s linear;
+        color: #ba1e68;
+        top: 20px;
+    }
+
+    .Header-Text span:nth-child(19){
+        animation: textAnim 1.85s linear;
+        color: #ba1e68;
+        top: 10px;
+    }
+
+    /* End Jele van den Broek Text Style */
+
+    /* Software Developer Text Style */
+
+    .Header-Text span:nth-child(20){
+        animation: textAnim 1s linear;
+        color: #ba1e68;
+        top: 180px;
+    }
+
+
+    .Header-Text span:nth-child(21){
+        animation: textAnim 1.05s linear;
+        color: #ba1e68;
+        top: 175px;
+    }
+
+    .Header-Text span:nth-child(22){
+        animation: textAnim 1.1s linear;
+        color: #ba1e68;
+        top: 170px;
+    }
+
+    .Header-Text span:nth-child(23){
+        animation: textAnim 1.15s linear;
+        color: #ba1e68;
+        top: 165px;
+    }
+
+    .Header-Text span:nth-child(24){
+        animation: textAnim 1.2s linear;
+        color: #ba1e68;
+        top: 160px;
+    }
+
+    .Header-Text span:nth-child(25){
+        animation: textAnim 1.25s linear;
+        color: #ba1e68;
+        top: 155px;
+    }
+
+    .Header-Text span:nth-child(26){
+        animation: textAnim 1.3s linear;
+        color: #ba1e68;
+        top: 150px;
+    }
+
+    .Header-Text span:nth-child(27){
+        animation: textAnim 1.35s linear;
+        color: #ba1e68;
+        top: 145px;
+    }
+
+    .Header-Text span:nth-child(28){
+        animation: textAnim 1.4s linear;
+        color: #ba1e68;
+        top: 140px;
+    }
+
+    .Header-Text span:nth-child(29){
+    }
+
+    .Header-Text span:nth-child(30){
+        animation: textAnim 1.45s linear;
+        color: #ba1e68;
+        top: 135px;
+    }
+
+    .Header-Text span:nth-child(31){
+        animation: textAnim 1.5s linear;
+        color: #ba1e68;
+        top: 130px;
+    }
+
+    .Header-Text span:nth-child(32){
+        animation: textAnim 1.55s linear;
+        color: #ba1e68;
+        top: 125px;
+    }
+
+    .Header-Text span:nth-child(33){
+        animation: textAnim 1.6s linear;
+        color: #ba1e68;
+        top: 120px;
+    }
+
+    .Header-Text span:nth-child(34){
+        animation: textAnim 1.65s linear;
+        color: #ba1e68;
+        top: 115px;
+    }
+
+    .Header-Text span:nth-child(35){
+        animation: textAnim 1.7s linear;
+        color: #ba1e68;
+        top: 110px;
+    }
+
+    .Header-Text span:nth-child(36){
+        animation: textAnim 1.75s linear;
+        color: #ba1e68;
+        top: 105px;
+    }
+
+    .Header-Text span:nth-child(37){
+        animation: textAnim 1.8s linear;
+        color: #ba1e68;
+        top: 100px;
+    }
+
+    .Header-Text span:nth-child(38){
+        animation: textAnim 1.85s linear;
+        color: #ba1e68;
+        top: 95px;
+    }
+
+    /* End Software Developer Text Style */
+
+
+
+    @keyframes textAnim{
+        from {
+            color: transparent;
+        }
+    
+        to {
+            color: #7649fe;
+        }
+    }
+    /* End Header Text */
+
+/* ----------------------------------------------------- End Header -----------------------------------------------------*/
+
+
+/* Test Divs */
+.testdiv{
+    height: 115vh;
+    width: 100%;
+    background-color: red;
+}
+
+.testdiv2{
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+
+/* End Test Divs */
+
 
 
