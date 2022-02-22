@@ -12,7 +12,7 @@ window.onscroll = function() {scrollFunction()};
     
 function scrollFunction() {
   // Make header smaller when scoll down
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     document.getElementById("Header").style.height = "10vh";
     document.getElementById("Header").style.position = "fixed";
     document.getElementById("Header").style.zIndex = "1000px";
@@ -114,6 +114,9 @@ function scrollFunction() {
     document.getElementById("Header-Text").getElementsByTagName("span")[35].style.top = "0px";
     document.getElementById("Header-Text").getElementsByTagName("span")[36].style.top = "0px";
     document.getElementById("Header-Text").getElementsByTagName("span")[37].style.top = "0px";
+
+
+
 
 
   // Make header default when scoll up
@@ -218,6 +221,8 @@ function scrollFunction() {
     document.getElementById("Header-Text").getElementsByTagName("span")[34].style.top = "105px";
     document.getElementById("Header-Text").getElementsByTagName("span")[35].style.top = "100px";
     document.getElementById("Header-Text").getElementsByTagName("span")[36].style.top = "95px";
+
+
 
   }
 }

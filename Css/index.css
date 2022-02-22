@@ -26,6 +26,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    
+
 }
 ol, ul {
 	list-style: none;
@@ -42,20 +44,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /* End CSS Reset */
 
 /* ----------------------------------------------------- Header -----------------------------------------------------*/
 
 /* Header Header */
+.Pages {
+    
+}
+
 .Header{
-    top: 0;
+
     height: 100vh;
     width: 100%;
     background-color: #0c164f;
     transition: all 0.2s;
+    
 }
 
 /* Header Logo */
+
+
 .Header-Logo img{
     position: absolute;
     width: 300px;
@@ -66,6 +79,7 @@ table {
     margin-top: 35vh;
     transition: all 0.2s;
     transform: rotateZ(45deg);
+    cursor: pointer;
 }
 
 @keyframes logoAnim{
@@ -1043,16 +1057,43 @@ table {
 
 
 /* Test Divs */
-.testdiv{
-    height: 115vh;
-    width: 100%;
-    background-color: red;
+
+.Pages{
+
 }
 
-.testdiv2{
-    height: 100vh;
+.Under-Header{
+    height: 10vh;
     width: 100%;
-    background-color: blue;
+}
+
+.About{
+    height: 90vh;
+    width: 100%;
+    background: rgba(0,67,102,0.85);
+
+}
+
+.Projects{
+    height: 90vh;
+    width: 100%;
+    background: rgba(0,67,102,0.90);
+
+
+}
+
+.Skills{
+    height: 90vh;
+    width: 100%;
+    background: rgba(0,67,102,0.95);
+
+}
+
+.Contact{
+    height: 90vh;
+    width: 100%;
+    background: rgba(0,67,102,1);
+
 }
 
 /* End Test Divs */
