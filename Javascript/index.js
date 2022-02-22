@@ -1,15 +1,19 @@
+
+
+
 // Scroll to top when refresh page
 if (history.scrollRestoration) {
   history.scrollRestoration = 'manual';
 } else {
   window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 }
 
 
-window.onscroll = function() {scrollFunction()};
-    
+
+window.onscroll = function () { scrollFunction() };
+
 function scrollFunction() {
   // Make header smaller when scoll down
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -36,7 +40,7 @@ function scrollFunction() {
 
     document.getElementById("Header-Text").style.marginTop = "10px";
     document.getElementById("Header-Text").style.marginLeft = "150px";
-    
+
     document.getElementById("Header-Text").getElementsByTagName("span")[0].style.fontSize = "30px";
     document.getElementById("Header-Text").getElementsByTagName("span")[1].style.fontSize = "30px";
     document.getElementById("Header-Text").getElementsByTagName("span")[2].style.fontSize = "30px";
@@ -119,7 +123,7 @@ function scrollFunction() {
 
 
 
-  // Make header default when scoll up
+    // Make header default when scoll up
   } else {
     document.getElementById("Header").style.height = "100vh";
     document.getElementById("Header").style.position = "none";
@@ -183,7 +187,7 @@ function scrollFunction() {
     document.getElementById("Header-Text").getElementsByTagName("span")[35].style.fontSize = "70px";
     document.getElementById("Header-Text").getElementsByTagName("span")[36].style.fontSize = "70px";
 
-    
+
     document.getElementById("Header-Text").getElementsByTagName("span")[0].style.top = "160px";
     document.getElementById("Header-Text").getElementsByTagName("span")[1].style.top = "150px";
     document.getElementById("Header-Text").getElementsByTagName("span")[2].style.top = "140px";
