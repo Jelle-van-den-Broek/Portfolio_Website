@@ -1063,21 +1063,19 @@ html{
 }
 
 .Under-Header{
+    top: 10vh;
     height: 10vh;
     width: 100%;
 }
 
 .About{
-    padding-top: 10vh;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: rgba(0,67,102,0.85);
-
 }
 
 .Projects{
-    padding-top: 10vh;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: rgba(0,67,102,0.90);
 
@@ -1085,16 +1083,14 @@ html{
 }
 
 .Skills{
-    padding-top: 10vh;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: rgba(0,67,102,0.95);
 
 }
 
 .Contact{
-    padding-top: 10vh;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: rgba(0,67,102,1);
 
